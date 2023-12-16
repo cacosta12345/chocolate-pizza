@@ -1,55 +1,256 @@
-header .deck-across {
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, strong {
+    font-family: 'Yellowtail', cursive;
+}
+
+.title {
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+header {
     display: flex;
-    border-bottom-color: black;
-    border-bottom-style: double;
-    border-bottom-width: thick;
-
-}
-
-header .logo img {
-    display: flex;
-}
-
-header .logo p {
-
-}
-
-
-
-header .thumbnails {
- position: absolute;
- right: 0;
-}
-
-body .card-column .title {
-    /* display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    align-content: center; */
-}
-
-body .card-column {
-    display: grid;
-    align-content: stretch;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    justify-items: start;
-} 
-
-body .body-column {
-        display: flex;
-    flex-direction: column;
-    max-width: min-content;
+    padding: 20px;
+    background-color: #fff;
 }
 
-body .recipe-card {
+header img {
+    height: 60px;
+}
+
+header .title {
+    font-size: 2em;
+    margin: 0 10px;
+}
+
+header strong {
+    font-weight: normal;
+    color: #a1a1a1;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    background-image: url(../images/list-bg.png);
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-
-
 }
 
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li img {
+    height: 20px;
+}
+
+section.deck {
+    width: 80%; 
+    margin: 20px auto;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card header h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+.card header strong {
+    display: block;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.card figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.bgimage {
+    background: url('images/list-bg.png') no-repeat center center;
+    background-size: cover;
+}
+
+.copy {
+    position: relative;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.recipe {
+    list-style: none;
+}
+
+.recipe li {
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.recipe label {
+    display: flex;
+    align-items: center;
+}
+
+.recipe input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, strong {
+    font-family: 'Yellowtail', cursive;
+}
+
+.title {
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+header img {
+    height: 60px;
+}
+
+header .title {
+    font-size: 2em;
+    margin: 0 10px;
+}
+
+header strong {
+    font-weight: normal;
+    color: #a1a1a1; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li img {
+    height: 20px;
+}
+
+section.deck {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+}
+
+.card header h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+.card header strong {
+    display: block;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.card figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bgimage {
+    background: url('images/list-bg.png') no-repeat center center;
+    background-size: cover;
+}
+
+.copy {
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.recipe {
+    list-style: none;
+}
+
+.recipe li {
+    background: rgba(255,255,255,0.8); 
+    margin-bottom: 5px;
+}
+
+.recipe label {
+    display: flex;
+    align-items: center;
+}
+
+.recipe input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.horizontal-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.horizontal-content figure {
+    margin-right: 20px;
+}
+
+.horizontal-content figure img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.horizontal-content .copy {
+    flex-grow: 2;
+}
+
+.horizontal-content .links a.primary {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    height: 30px;
+}
+
+footer p {
+    margin-top: 10px;
+}
